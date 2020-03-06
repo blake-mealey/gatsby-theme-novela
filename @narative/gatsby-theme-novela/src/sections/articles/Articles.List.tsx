@@ -258,9 +258,11 @@ const ImageContainer = styled.div<{ narrow: boolean; gridLayout: string }>`
   margin-bottom: ${p => (p.gridLayout === 'tiles' ? '30px' : 0)};
   transition: transform 0.3s var(--ease-out-quad),
     box-shadow 0.3s var(--ease-out-quad);
+  overflow: hidden;
 
   & > div {
     height: 100%;
+    transition: transform 0.3s var(--ease-out-quad);
   }
 
   ${mediaqueries.tablet`
@@ -357,6 +359,10 @@ const ArticleLink = styled(Link)`
     transform: translateY(-1px);
     box-shadow: 0 50px 80px -20px rgba(0, 0, 0, 0.27),
       0 30px 50px -30px rgba(0, 0, 0, 0.3);
+
+      & > div {
+        transform: scale(1.1);
+      }
   }
 
   &:hover h2,
