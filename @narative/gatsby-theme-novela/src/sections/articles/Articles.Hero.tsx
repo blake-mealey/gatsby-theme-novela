@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 import Section from '@components/Section';
 import Bio from '@components/Bio';
-import Icons from '@icons';
+import SocialLinks from "@components/SocialLinks";
 import mediaqueries from '@styles/media';
 import { IAuthor } from '@types';
 
@@ -34,7 +34,6 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
 
   const results = useStaticQuery(authorQuery);
   const hero = results.site.edges[0].node.siteMetadata.hero;
-  const tilesIsActive = hasSetGridLayout && gridLayout === 'tiles';
   const featuredAuthor = authors.find(author => author.featured);
 
   if (!featuredAuthor) {
@@ -51,8 +50,9 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
       </HeadingContainer>
       <SubheadingContainer>
         <Bio author={featuredAuthor} />
-        <GridControlsContainer>
-        </GridControlsContainer>
+        <SocialContainer>
+          <SocialLinks links={featuredAuthor.social} />
+        </SocialContainer>
       </SubheadingContainer>
     </Section>
   );
@@ -79,13 +79,13 @@ const SubheadingContainer = styled.div`
   `};
 `;
 
-const GridControlsContainer = styled.div`
+const SocialContainer = styled.div`
   display: flex;
   align-items: center;
 
   ${mediaqueries.tablet`
     display: none;
-  `};
+  `}
 `;
 
 const HeadingContainer = styled.div`
