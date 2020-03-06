@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build && cp -R _redirects public/",
-    "develop": "rm -rf .cache && gatsby develop",
+    "develop": "rimraf .cache && gatsby develop",
     "clean": "gatsby clean"
   },
   "dependencies": {
@@ -15,9 +15,11 @@
     "gatsby-plugin-google-analytics": "^2.1.6",
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.2.4",
-    "gatsby-source-contentful": "^2.1.73",
     "gatsby-source-filesystem": "^2.1.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
   }
 }
