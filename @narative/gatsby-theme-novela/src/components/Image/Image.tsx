@@ -10,6 +10,7 @@ import { IImg } from "@types";
  * we're adding a CSS blur to the image. This makes it smoother!
  */
 const StyledGatsbyImag = styled(GatsbyImg)`
+  border-radius: ${p => p.theme.spacing.roundness};
   & > img {
     filter: blur(8px);
   }

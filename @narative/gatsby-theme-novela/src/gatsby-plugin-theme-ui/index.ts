@@ -31,4 +31,7 @@ export default merge({
   fonts,
   breakpoints,
   tags,
+  spacing: {
+    roundness: '10px'
+  }
 });

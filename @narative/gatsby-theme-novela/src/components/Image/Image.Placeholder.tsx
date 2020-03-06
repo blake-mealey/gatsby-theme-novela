@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import mediaqueries from "@styles/media";
 
 const Container = styled.div`
+  border-radius: ${p => p.theme.spacing.roundness};
   display: flex;
   align-items: center;
   justify-content: center;
