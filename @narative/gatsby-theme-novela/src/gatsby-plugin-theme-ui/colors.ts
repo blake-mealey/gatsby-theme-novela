@@ -1,5 +1,7 @@
 import prism from "./prism";
 
+const teal = "#9FE0E5";
+
 export default {
   prism,
 
@@ -7,7 +9,7 @@ export default {
   secondary: "#73737D",
   grey: "#73737D",
   background: "#fafafa",
-  accent: "#6166DC",
+  accent: teal,
   hover: "rgba(0, 0, 0, 0.07)",
   gradient: "linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #D9DBE0 100%)",
   articleText: "#08080B",
@@ -24,7 +26,7 @@ export default {
       grey: "#73737D",
       primary: "#fff",
       secondary: "#fff",
-      accent: "#E9DAAC",
+      accent: teal,
       background: "#111216",
       hover: "rgba(255, 255, 255, 0.07)",
       gradient:
