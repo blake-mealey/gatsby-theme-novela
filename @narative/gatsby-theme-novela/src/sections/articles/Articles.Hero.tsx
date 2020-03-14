@@ -65,14 +65,6 @@ const SubheadingContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  ${mediaqueries.desktop`
-    margin-bottom: 80px;
-  `};
-
-  ${mediaqueries.tablet`
-    margin-bottom: 60px;
-  `};
-
   ${mediaqueries.phablet`
     display: none;
   `};

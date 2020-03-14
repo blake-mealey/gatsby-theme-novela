@@ -51,7 +51,7 @@ const Hero = styled.div`
       content: "";
       width: 100%;
       height: 20px;
-      background: ${p.theme.colors.primary};
+      background: ${p.theme.colors.grey};
       position: absolute;
       left: 0;
       top: 0;
@@ -62,7 +62,7 @@ const Hero = styled.div`
       content: "";
       width: 100%;
       height: 10px;
-      background: ${p.theme.colors.background};
+      background: ${p.theme.colors.heroBackground};
       position: absolute;
       left: 0;
       top: 10px;

@@ -247,6 +247,7 @@ const List = styled.div<{
 
 const Item = styled.div<{ gridLayout: string }>`
   ${p => (p.gridLayout === 'rows' ? listItemRow : listItemTile)}
+  border-radius: 10px;
 `;
 
 const ImageContainer = styled.div<{ narrow: boolean; gridLayout: string }>`
@@ -274,8 +275,6 @@ const ImageContainer = styled.div<{ narrow: boolean; gridLayout: string }>`
     overflow: hidden;
     margin-bottom: 0;
     box-shadow: none;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
   `}
 `;
 

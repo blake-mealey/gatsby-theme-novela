@@ -140,8 +140,6 @@ const ImageContainer = styled.div`
     margin-bottom: 0;
     box-shadow: none;
     overflow: hidden;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
   `}
 `;
 

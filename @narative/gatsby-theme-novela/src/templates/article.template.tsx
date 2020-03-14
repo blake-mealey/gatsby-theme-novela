@@ -110,7 +110,7 @@ export default Article;
 
 const MobileControls = styled.div`
   position: relative;
-  padding-top: 60px;
+  padding-bottom: 60px;
   transition: background 0.2s linear;
   text-align: center;
 
@@ -121,7 +121,7 @@ const MobileControls = styled.div`
 
 const ArticleBody = styled.article`
   position: relative;
-  padding: 160px 0 35px;
+  padding-bottom: 35px;
   padding-left: 68px;
   transition: background 0.2s linear;
 
@@ -130,11 +130,12 @@ const ArticleBody = styled.article`
   `}
   
   ${mediaqueries.tablet`
-    padding: 70px 0 80px;
+    padding-bottom: 80px;
   `}
 
   ${mediaqueries.phablet`
-    padding: 60px 0;
+    padding-bottom: 60px;
+    padding-left: 0;
   `}
 `;
 
