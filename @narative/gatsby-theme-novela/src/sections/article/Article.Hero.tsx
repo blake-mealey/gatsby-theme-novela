@@ -101,7 +101,7 @@ const Header = styled.header`
   `}
 
   ${mediaqueries.phablet`
-    margin: 170px auto 180px;
+    margin: 170px auto 60px;
     padding: 0 40px;
   `}
 
