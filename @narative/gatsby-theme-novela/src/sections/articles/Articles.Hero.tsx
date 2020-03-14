@@ -64,7 +64,6 @@ const SubheadingContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
 
   ${mediaqueries.desktop`
     margin-bottom: 80px;

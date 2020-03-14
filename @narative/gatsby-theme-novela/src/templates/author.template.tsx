@@ -16,14 +16,17 @@ const ArticlesPage: Template = ({ location, pageContext }) => {
   const articles = pageContext.group;
 
   return (
-    <Layout>
+    <Layout hero={
+      <Section narrow>
+        <AuthorHero author={author} />
+      </Section>}
+    >
       <SEO
         pathname={location.pathname}
         title={author.name}
         description={author.bio}
       />
       <Section narrow>
-        <AuthorHero author={author} />
         <AuthorArticles articles={articles} />
         <AuthorPaginator>
           <Paginator {...pageContext} />

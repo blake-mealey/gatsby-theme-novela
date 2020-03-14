@@ -14,7 +14,7 @@ import { globalStyles } from '@styles';
  * and the main structure of each page. Within Layout we have the <Container />
  * which hides a lot of the mess we need to create our Desktop and Mobile experiences.
  */
-const Layout: React.FC<{}> = ({ children }) => {
+const Layout: React.FC<{}> = ({ children, hero }) => {
   const [colorMode] = useColorMode();
 
   useEffect(() => {
@@ -23,9 +23,13 @@ const Layout: React.FC<{}> = ({ children }) => {
 
   return (
     <ArticlesContextProvider>
-      <Container>
+      <HeroContainer>
         <Global styles={globalStyles} />
         <NavigationHeader />
+        {hero}
+      </HeroContainer>
+      <Container>
+        <Global styles={globalStyles} />
         {children}
         <NavigationFooter />
       </Container>
@@ -39,5 +43,12 @@ const Container = styled.div`
   position: relative;
   background: ${p => p.theme.colors.background};
   transition: ${p => p.theme.colorModeTransition};
-  min-height: 100vh;
+  /* min-height: 100vh; */
+`;
+
+const HeroContainer = styled(Container)`
+  background: ${p => p.theme.colors.heroBackground};
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  box-shadow: 0 15px 30px -10px rgba(0,0,0,0.3);
 `;

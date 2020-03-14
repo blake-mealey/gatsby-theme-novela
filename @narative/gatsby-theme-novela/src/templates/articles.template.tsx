@@ -16,9 +16,8 @@ const ArticlesPage: Template = ({ location, pageContext }) => {
   const authors = pageContext.additionalContext.authors;
 
   return (
-    <Layout>
+    <Layout hero={<ArticlesHero authors={authors} />}>
       <SEO pathname={location.pathname} />
-      <ArticlesHero authors={authors} />
       <Section narrow>
         <ArticlesList articles={articles} />
         <ArticlesPaginator show={pageContext.pageCount > 1}>

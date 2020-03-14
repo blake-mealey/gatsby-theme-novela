@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 import Icons from '@icons';
 import mediaqueries from '@styles/media';
 
+import { useThemeUI } from 'theme-ui';
+
 interface SocialLinksProps {
   links: {
     name: string;
@@ -36,10 +38,12 @@ const getHostname = url => {
 };
 
 const SocialLinks: React.FC<SocialLinksProps> = ({
-  links,
-  fill = '#73737D',
+  links
 }) => {
   if (!links) return null;
+
+  const { theme } = useThemeUI();
+  const fill = theme.colors.grey;
 
   return (
     <>
