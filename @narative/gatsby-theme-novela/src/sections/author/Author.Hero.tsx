@@ -47,7 +47,7 @@ const HeroImage = styled.div`
   margin-bottom: 35px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid ${p => p.theme.colors.background};
+  border: 2px solid ${p => p.theme.colors.heroBackground};
   box-shadow: 0px 15.619px 31.2381px rgba(0, 0, 0, 0.15);
 
   ${mediaqueries.tablet`

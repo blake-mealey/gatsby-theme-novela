@@ -9,7 +9,7 @@ export default {
   secondary: "#rgba(0,0,0,0.6)",
   grey: "rgba(0,0,0,0.6)",
   background: "#fafafa",
-  heroBackground: '#00ACC1',
+  heroBackground: '#26C6DA',
   accent: teal,
   hover: "rgba(0, 0, 0, 0.07)",
   gradient: "linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #D9DBE0 100%)",
@@ -29,7 +29,7 @@ export default {
       secondary: "#fff",
       accent: teal,
       background: "#111216",
-      heroBackground: '#0097A7',
+      heroBackground: '#00838F',
       hover: "rgba(255, 255, 255, 0.07)",
       gradient:
         "linear-gradient(180deg, #111216 0%, rgba(66, 81, 98, 0.36) 100%)",

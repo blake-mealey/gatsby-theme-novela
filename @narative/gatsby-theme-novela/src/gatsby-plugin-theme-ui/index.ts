@@ -13,11 +13,12 @@ const breakpoints = [
   ['desktop_large', 1440],
 ];
 
-const fonts = {
-  serif: "'Merriweather', Georgia, Serif",
+export const fonts = {
+  serif: "'Lora', Georgia, Serif",
   sansSerif:
-    "'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Ubuntu', 'Roboto', 'Noto', 'Segoe UI', 'Arial', sans-serif",
+    "'Assistant', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Helvetica Neue', 'Helvetica', 'Ubuntu', 'Roboto', 'Noto', 'Segoe UI', 'Arial', sans-serif",
   monospace: `"Operator Mono", Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`,
+  fancy: "'Tangerine'"
 };
 
 const colorModeTransition =

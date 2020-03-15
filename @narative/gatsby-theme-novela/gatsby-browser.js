@@ -1,5 +1,7 @@
 // Load static fonts
-require('typeface-merriweather');
+require('typeface-lora');
+require('typeface-assistant');
+require('typeface-tangerine');
 
 exports.onInitialClientRender = require('./src/gatsby/browser/onInitialClientRender');
 exports.onRouteUpdate = require('./src/gatsby/browser/onRouteUpdate');

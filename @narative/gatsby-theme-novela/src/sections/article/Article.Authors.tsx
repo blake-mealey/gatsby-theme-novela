@@ -198,7 +198,7 @@ const CoAuthorAvatar = styled.div`
   border-radius: 50%;
   z-index: 1;
   background: ${p => p.theme.colors.grey};
-  box-shadow: 0 0 0 2px ${p => p.theme.colors.background};
+  box-shadow: 0 0 0 2px ${p => p.theme.colors.heroBackground};
   transition: box-shadow 0.25s ease;
   overflow: hidden;
   pointer-events: none;

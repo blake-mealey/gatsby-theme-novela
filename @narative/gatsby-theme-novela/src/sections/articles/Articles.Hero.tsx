@@ -92,6 +92,7 @@ const HeadingContainer = styled.div`
 `;
 
 const HeroHeading = styled.h1`
+  font-family: ${p => p.theme.fonts.serif};
   font-style: normal;
   font-weight: 600;
   font-size: 52px;
